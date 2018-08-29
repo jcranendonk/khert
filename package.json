@@ -1,0 +1,40 @@
+{
+  "name": "falcor_onboarding",
+  "version": "1.0.0",
+  "description": "UIP Falcor Onboarding Exercises",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcranendonk/khert.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcranendonk/khert/issues"
+  },
+  "homepage": "https://github.com/jcranendonk/khert#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "ava": "^0.25.0",
+    "eslint": "^5.4.0",
+    "eslint-plugin-flowtype": "^2.50.0"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "bunyan-format": "^0.2.1"
+  },
+  "ava": {
+    "files": [
+      "test/**/*test.js"
+    ],
+    "require": [
+      "@babel/register"
+    ]
+  }
+}
