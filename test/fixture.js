@@ -1,4 +1,3 @@
-// @flow
 export default {
   list: {
     "-1": { $type: "ref", value: ["list", 1] },

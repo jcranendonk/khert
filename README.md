@@ -1,5 +1,12 @@
-# The khert
+# Falcor onboarding exercises
 
-The vast and invisible plane that undergirds reality.
+Types:
 
-Also a scratchpad repo.
+```js
+type JsonGraph = {};
+type Key = string | boolean | number | null;
+type Path = Key[];
+type Range = { from: number, to: number };
+type KeySet = Key | Range | (Key | Range)[];
+type PathSet = KeySet[];
+```

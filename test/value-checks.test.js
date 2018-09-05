@@ -1,4 +1,3 @@
-// @flow
 import test from "ava";
 import { isAtom, isError, isPrimitive, isRef } from "../lib/value-checks";
 

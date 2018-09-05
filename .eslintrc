@@ -1,4 +1,7 @@
 {
-  "extends": ["plugin:flowtype/recommended"],
-  "plugins": ["flowtype"]
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"]
+  }
 }
