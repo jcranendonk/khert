@@ -28,7 +28,8 @@
   "dependencies": {
     "bunyan": "^1.8.12",
     "bunyan-format": "^0.2.1",
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.10",
+    "zen-observable": "^0.8.9"
   },
   "ava": {
     "files": [

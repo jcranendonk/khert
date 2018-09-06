@@ -1,5 +1,17 @@
 # Falcor onboarding exercises
 
+To run tests:
+
+```bash
+$ npm test
+```
+
+To run tests with debug logging: 
+
+```bash
+$ LOG_LEVEL=debug npm test
+```
+
 Types:
 
 ```js
