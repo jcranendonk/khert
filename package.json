@@ -18,12 +18,14 @@
   "homepage": "https://github.com/jcranendonk/khert#readme",
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "@babel/register": "^7.0.0",
     "ava": "^0.25.0",
     "babel-eslint": "^9.0.0",
     "eslint": "^5.4.0",
-    "eslint-plugin-lodash-fp": "^2.2.0-a1"
+    "eslint-plugin-lodash-fp": "^2.2.0-a1",
+    "pretty-ms": "^3.2.0",
+    "random-words": "^1.1.0"
   },
   "dependencies": {
     "bunyan": "^1.8.12",
