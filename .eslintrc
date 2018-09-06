@@ -1,6 +1,6 @@
 {
   "parser": "babel-eslint",
-  "extends": ["eslint:recommended"],
+  "extends": ["eslint:recommended", "plugin:lodash-fp/recommended"],
   "rules": {
     "comma-dangle": ["error", "always-multiline"]
   }
