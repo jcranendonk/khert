@@ -3746,7 +3746,3 @@ yallist@^2.1.2:
 yallist@^3.0.0, yallist@^3.0.2:
   version "3.0.2"
   resolved "https://artifacts.netflix.com/api/npm/npm-netflix/yallist/-/yallist-3.0.2.tgz#8452b4bb7e83c7c188d8041c1a837c773d6d8bb9"
-
-zen-observable@^0.8.9:
-  version "0.8.9"
-  resolved "https://artifacts.netflix.com/api/npm/npm-netflix/zen-observable/-/zen-observable-0.8.9.tgz#0475c760ff0eda046bbdfa4dc3f95d392807ac53"
