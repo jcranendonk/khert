@@ -1,5 +1,5 @@
 import test from "ava";
-import { isAtom, isError, isPrimitive, isRef } from "../lib/value-checks";
+import { isAtom, isError, isPrimitive, isRef, isGraphPrimitive } from "../lib/value-checks";
 
 test("undefined is primitive", t => t.true(isPrimitive(undefined)));
 test("null is primitive", t => t.true(isPrimitive(null)));
@@ -14,6 +14,15 @@ test("atom is primitive", t => t.true(isPrimitive({ $type: "atom" })));
 test("error is primitive", t => t.true(isPrimitive({ $type: "error" })));
 test("object is not primitive", t => t.false(isPrimitive({})));
 test("array is not primitive", t => t.false(isPrimitive([])));
+
+test("ref is graph primitive", t => t.true(isGraphPrimitive({ $type: "ref" })));
+test("atom is graph primitive", t => t.true(isGraphPrimitive({ $type: "atom" })));
+test("error is graph primitive", t => t.true(isGraphPrimitive({ $type: "error" })));
+test("undefined is not graph primitive", t => t.false(isGraphPrimitive(undefined)));
+test("null is not graph primitive", t => t.false(isGraphPrimitive(null)));
+test("JS primitive is not graph primitive", t => t.false(isGraphPrimitive("x")));
+test("object is not graph primitive", t => t.false(isGraphPrimitive({})));
+test("array is not graph primitive", t => t.false(isGraphPrimitive([])));
 
 test("atom is atom", t => t.true(isAtom({ $type: "atom" })));
 test("non-atom is not atom", t => t.false(isAtom({ $type: "ref" })));
