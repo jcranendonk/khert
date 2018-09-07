@@ -4,8 +4,14 @@
   "description": "UIP Falcor Onboarding Exercises",
   "main": "dist/index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "lint": "standard",
+    "dev": "chokidar '**/*.js' -c 'standard && ava'"
   },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jcranendonk/khert.git"
@@ -21,10 +27,11 @@
     "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "ava": "^0.25.0",
-    "babel-eslint": "^9.0.0",
-    "eslint": "^5.4.0",
+    "chokidar-cli": "^1.2.1",
+    "precommit-hook": "^3.0.0",
     "pretty-ms": "^3.2.0",
-    "random-words": "^1.1.0"
+    "random-words": "^1.1.0",
+    "standard": "^12.0.1"
   },
   "dependencies": {
     "bunyan": "^1.8.12",
