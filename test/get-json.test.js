@@ -12,6 +12,11 @@ test('getJson returns the value of atoms', t =>
     videosById: { 22: { bookmark: 73973 } }
   }))
 
+test('getJson returns data in the form it was requested', t =>
+  t.deepEqual(getJson(graph, ['list', [0, 1], ['name', 'rating']]), {
+    list: { 0: { name: 'Die Hard', rating: 5 }, 1: { name: 'Get Out', rating: 4 } }
+  }))
+
 test('getJson throws the value of JSON Graph errors', t =>
   t.throws(() => getJson(graph, ['videosById', 44, 'bookmark'])))
 
