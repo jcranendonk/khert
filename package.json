@@ -1,0 +1,25 @@
+{
+  "name": "falcor-demo",
+  "version": "1.0.0",
+  "description": "The vast and invisible plane that undergirds reality.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "falcor": "^2.0.6",
+    "url": "^0.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcranendonk/scratchpad.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcranendonk/scratchpad/issues"
+  },
+  "homepage": "https://github.com/jcranendonk/scratchpad#readme"
+}
